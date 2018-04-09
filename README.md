@@ -1,4 +1,4 @@
 # webpack
-# 起步-使用模块，配置文件，npm脚本 [doc](https://doc.webpack-china.org/guides/getting-started/#%E6%A8%A1%E5%9D%97)
+# 管理资源-加载资源，loader使用[doc](https://doc.webpack-china.org/guides/asset-management/)
 
-本章学习 模块开发，webpack配置和npm启动脚本
+本章学习 如何加载css，图片，字体等资源
