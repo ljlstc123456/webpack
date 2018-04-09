@@ -1,5 +1,4 @@
 # webpack
-# 这是古老的script引入js库的前端项目。这样做的问题是
-* 无法立即体现，脚本的执行依赖于外部扩展库(external library)。
-* 如果依赖不存在，或者引入顺序错误，应用程序将无法正常运行。
-* 如果依赖被引入但是并没有使用，浏览器将被迫下载无用代码。
+# 起步-创建一个bundle文件   [doc](https://doc.webpack-china.org/guides/getting-started/#%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA-bundle-%E6%96%87%E4%BB%B6)
+
+本章学习webpack安装依赖以及bundle文件生成，bundle文件是webpack构建过程中出现做多的概念，类似于一个片段，包，模块
