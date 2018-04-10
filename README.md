@@ -1,4 +1,4 @@
 # webpack
-# 代码分离  [doc](https://doc.webpack-china.org/guides/code-splitting/)
+# 代码分离-动态导入  [doc](https://doc.webpack-china.org/guides/code-splitting/#%E5%8A%A8%E6%80%81%E5%AF%BC%E5%85%A5-dynamic-imports-)
 
-本章学习webpack代码分离，代码分离到不同的bundle中，然后进行按需加载或者并行加载
+
