@@ -1,4 +1,4 @@
 # webpack
-# 管理输出   [doc](https://doc.webpack-china.org/guides/output-management/)
+# 开发过程   [doc](https://doc.webpack-china.org/guides/development/)
 
-本章学习打包输出，并且不用关心index.html
+本章学习webpack在实际开发中的使用
