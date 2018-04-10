@@ -5,7 +5,10 @@ const webpack = require('webpack');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 module.exports = {
   entry: {
-    app: './src/index.js'
+    app: './src/index.js',
+    vendor: [
+       'lodash'
+     ]
   },
   devtool: 'inline-source-map',
   devServer: {
@@ -14,17 +17,20 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
-    new UglifyJSPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Development'
+      title: 'Caching'
     }),
-    new webpack.NamedModulesPlugin(),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HashedModuleIdsPlugin(),
+    new webpack.optimize.CommonsChunkPlugin({
+       name: 'vendor'
+     }),
+    new webpack.optimize.CommonsChunkPlugin({
+       name: 'manifest'
+     })
   ],
   output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/'
+    filename: '[name].[chunkhash].js',
+    path: path.resolve(__dirname, 'dist')
   },
 
 };
