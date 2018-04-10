@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 module.exports = {
   entry: {
     app: './src/index.js'
@@ -13,6 +14,7 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
+    new UglifyJSPlugin(),
     new HtmlWebpackPlugin({
       title: 'Development'
     }),
