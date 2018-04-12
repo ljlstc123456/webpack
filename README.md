@@ -1,4 +1,4 @@
 # webpack
-# 开发过程   [doc](https://doc.webpack-china.org/guides/development/)
+# 创建Library  [doc](https://doc.webpack-china.org/guides/author-libraries/)
 
-本章学习webpack在实际开发中的使用
+本章学习开发Library包

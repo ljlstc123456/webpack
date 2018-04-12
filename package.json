@@ -20,6 +20,7 @@
     "express": "^4.16.3",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
+    "ljl-webpack-numbers": "^0.1.0",
     "style-loader": "^0.20.3",
     "webpack": "^3.10.0",
     "webpack-dev-middleware": "^1.12.0",
